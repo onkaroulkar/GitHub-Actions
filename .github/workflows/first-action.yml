@@ -15,6 +15,7 @@ jobs:
       - name: Run Spring Boot Tests
         run: mvn test
   deploy:
+      needs: test
       runs-on: ubuntu-latest
       steps:
         - name: Get Code
