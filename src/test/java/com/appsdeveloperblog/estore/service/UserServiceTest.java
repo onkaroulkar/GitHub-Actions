@@ -25,7 +25,7 @@ public class UserServiceTest {
         User user = userService.createUser(firstName, lastName, email, password, repeatPassword);
 
         // Assert
-        assertNotNull(null, "The createUser() should not have returned null");
+        assertNotNull(user, "The createUser() should not have returned null");
         assertEquals(firstName, user.getFirstName(), "User's first name is incorrect.");
         assertEquals(lastName, user.getLastName(), "User's last name is incorrect");
         assertEquals(email, user.getEmail(), "User's email is incorrect");
