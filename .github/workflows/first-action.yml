@@ -1,5 +1,8 @@
 name: Spring Boot Unit Tests
-on: [push,workflow_dispatch]
+on:
+  pull_request:
+    - opened
+  workflow_dispatch:
 jobs:
   test:
     runs-on: ubuntu-latest
