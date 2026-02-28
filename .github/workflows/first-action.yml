@@ -1,6 +1,8 @@
 name: Spring Boot Unit Tests
 on:
-  pull_request: [opened]
+  pull_request:
+    types:
+      - opened
   workflow_dispatch:
 jobs:
   test:
