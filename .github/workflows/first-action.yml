@@ -58,13 +58,8 @@ jobs:
             name: my-artifact
         - name: Output Contents
           run: ls
-        - name: Set Up JDK 22
-          uses: actions/setup-java@v4
-          with:
-            distribution: temurin
-            java-version: '22'
-            cache: maven
-        - name: Build Project
-          run: mvn -B clean package
+        - name: Final code deployed
+          run: echo"deployed...."
+
 
 
