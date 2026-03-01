@@ -47,7 +47,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
             name: my-artifact
-            path: dist # or path/to/artifact
+            path: target/*.jar # or path/to/artifact
   deploy:
       needs: build
       runs-on: ubuntu-latest
