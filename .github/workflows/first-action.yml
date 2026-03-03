@@ -25,7 +25,9 @@ jobs:
 
     strategy:
       matrix:
-        java: [22]
+        java: [17,22]
+        exclude:
+          - java: 17
 
     steps:
       - name: Checkout Code
@@ -49,7 +51,9 @@ jobs:
 
     strategy:
       matrix:
-        java: [22]
+        java: [ 17,22 ]
+        exclude:
+          - java: 17
 
     steps:
       - name: Checkout Code
